@@ -302,14 +302,21 @@ img {
 .skills__html {
   width: 95%;
 }
+.skills__C {
+  width: 90%;
+}
+
 .skills__css {
-  width: 85%;
+  width: 80%;
 }
 .skills__js {
-  width: 65%;
+  width: 75%;
 }
-.skills__ux {
-  width: 85%;
+.skills__game {
+  width: 90%;
+}
+.skills__db {
+  width: 75%;
 }
 .skills__img {
   border-radius: 0.5rem;
@@ -330,6 +337,7 @@ img {
   margin-top: 5vh;
   
 }
+
 .work__img img {
   transition: 1s;
 }
@@ -342,6 +350,19 @@ img {
 }
 .info{
   margin-left: 1vw;
+}
+.info a{
+  color: black;
+}
+@media (max-width: 768px) {
+  .work__img {
+      width: 90%;
+      flex-direction: column;
+  }
+  .work__img video{
+    height:30vh;
+    width: 80vw;
+  }
 }
 /* ===== CONTACT =====*/
 .contact__input {
