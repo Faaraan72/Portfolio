@@ -1,5 +1,6 @@
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
 /*===== VARIABLES CSS =====*/
 :root {
   --header-height: 3rem;
@@ -50,12 +51,13 @@ body {
   color: var(--second-color); 
 }
 
-@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
 
 *{
     margin: 0px;
     padding: 0px;
 }
+
 
 
 .area{
@@ -244,14 +246,28 @@ img {
 
 .l-header {
   width: 100%;
-  /* position: fixed; */
+  position: fixed;
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  /* background-color: #fff; */
-  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+  /* background-color: #a2d7ff; */
+  /* box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15); */
 }
-
+.blurred-box {
+  /* position: absolute; */
+  /* top: 50%; */
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  /* width: 300px; */
+  /* padding: 20px; */
+  background: rgba(255, 255, 255, 0.2); /* Transparent white background */
+  /* border-radius: 10px; */
+  backdrop-filter: blur(10px) ;/* Blur effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* color: #000; */
+  
+}
 /*===== NAV =====*/
 .nav {
   height: var(--header-height);
@@ -265,11 +281,15 @@ img {
     position: fixed;
     top: var(--header-height);
     right: -100%;
-    width: 80%;
-    height: 100%;
-    padding: 2rem;
-    background-color: var(--second-color);
+    width: 50%;
+    /* height: 100%; */
+    padding: 3rem;
+    /* background-color: var(--second-color); */
     transition: 0.5s;
+    background-color: #7f85ff;
+    border-bottom-left-radius: 50px;
+  
+  
   }
 }
 .nav__item {
@@ -309,11 +329,13 @@ img {
   left: 0;
   top: 2rem;
   background-color: var(--first-color);
+  
 }
 
 /*=== Show menu ===*/
 .show {
   right: 0;
+  
 }
 
 /*===== HOME =====*/
