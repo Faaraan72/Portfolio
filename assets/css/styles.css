@@ -376,6 +376,11 @@ img {
 }
 .home__blob {
   fill: var(--first-color);
+  z-index: -1;
+}
+.home__blob2 {
+  fill: rgba(255, 255, 255, 0.614);
+  z-index: -1;
 }
 .home__blob-img {
   width: 360px;
@@ -531,7 +536,7 @@ img {
 }
 /* ===== CONTACT =====*/
 .contact__input {
-  width: 100%;
+  width: 90%;
   font-size: var(--normal-font-size);
   font-weight: var(--font-semi);
   padding: 1rem;
@@ -555,10 +560,19 @@ img {
 .contact__container {
   justify-items: center;
 }
+.gridCOntent{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+}
 
 /* ===== FOOTER =====*/
+#peekImg {
+  width: 100px; /* Set the width to reduce the size */
+  height: auto; /* Maintain aspect ratio */
+}
 .footer {
   background-color: var(--second-color);
+  width: 100vw;
   color: #fff;
   text-align: center;
   font-weight: var(--font-semi);
