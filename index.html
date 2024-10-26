@@ -41,6 +41,8 @@
                         <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
                         <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                        <li class="nav__item"><img src="assets/img/d.png"  width="50px" height=auto class="nav__link" id="btn"></li>
+
                     </ul>
                 </div>
 
@@ -55,7 +57,7 @@
             <!--===== HOME =====-->
             <section class="home bd-grid" id="home">
                 <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">FAARAAN</span></h1><h2>Specialized Game Developer <br> Software Developer  </h2>
+                    <h1 class="home__title">Hi,<br>I am <span class="home__title-color">FAARAAN</span></h1><h2>Specialized Game Developer <br> Software Developer  </h2>
                     <br>
                     <a href="https://drive.google.com/uc?export=download&id=1fBBLPFUASjjLPa7W8AupXQZvoaVsnqxC" class="button">Download Resume</a>
                 </div>
@@ -199,7 +201,7 @@
                     
                     <div>              
                         <!-- <img src="assets/img/3blueWhiteAvatar.png" alt="" class="skills__img"> -->
-                        <svg class="home__blob2" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <mask id="mask0" mask-type="alpha">
                                 <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
                             </mask>
@@ -259,10 +261,12 @@
                     <div>
                         <h2 class="about__subtitle">Sagaci Studios</h2>
                         <p class="about__text">Unity3D Developer · May 2023 to June 2023 <br>
-                            -Created a HyperCasual Game for Android Mobiles, named MarblesClash. <br>
+                            -Created a HyperCasual Game for Android Mobiles, named SoccerStriker. <br>
                             -Buit Game Mechanics and User Friendly UI.<br>
-                            -Implemented Real world Physics for the Marbles through C# Scripts and Unity's Physics System.<br>
-                            The technologies used were Unity3D Editor, Visual studio code, C#.</p>           
+                            -Implemented Real world Physics for the SoccerStriker through C# Scripts and Unity's Physics System.<br>
+                            The technologies used were Unity3D Editor, Visual studio code, C#.</p>
+                            <a href="https://play.google.com/store/apps/details?id=com.SagaciSystems.SoccerStriker">Check Game Here</a>   
+                                    
                     </div> 
                     <div class="about__img">
                         <img src="assets/img/hawkvisum_up.jpeg" alt="">
@@ -417,7 +421,31 @@
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
 
-       
+        <script>
+          document.addEventListener("DOMContentLoaded", function() {
+    let btn = document.getElementById("btn");
+    let btnImage = document.getElementById("btn");
+
+    btn.onclick = function() {
+        document.body.classList.toggle("dark-mode"); // Toggle dark mode on the body
+
+        // Check if dark mode is active and change the button image accordingly
+        if (document.body.classList.contains("dark-mode")) {
+            btnImage.src = "assets/img/n.png"; // Change to dark mode image
+        } else {
+            btnImage.src = "assets/img/d.png"; // Change to light mode image
+        }
+    };
+});
+        
+            let btn = document.getElementById("btn");
+
+          btn.onclick = function() {
+            
+            document.body.classList.toggle("dark-mode");
+            };
+        </script>
 
     </body>
+   
 </html>
