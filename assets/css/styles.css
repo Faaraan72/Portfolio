@@ -578,12 +578,15 @@ img {
 }
 .contact__container {
   justify-items: center;
+  
 }
-.gridCOntent{
+/* .gridCOntent{
 display: grid;
 grid-template-columns: 1fr 1fr 1fr;
+} */
+#contact{
+  overflow: hidden;
 }
-
 /* ===== FOOTER =====*/
 #peekImg {
   width: 100px; /* Set the width to reduce the size */
