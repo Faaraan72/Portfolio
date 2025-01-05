@@ -51,13 +51,15 @@
                 </div>
             </nav>
         </header>
-       
+
+      
 
         <main class="l-main">
             <!--===== HOME =====-->
             <section class="home bd-grid" id="home">
                 <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I am <span class="home__title-color">FAARAAN</span></h1><h2>Specialized Game Developer <br> Software Developer  </h2>
+                    <h1 class="home__title">Hi,<br>I am <span class="home__title-color">FAARAAN</span></h1>
+                    <h1><span id="auto_type"></span></h1>
                     <br>
                     <a href="https://drive.google.com/uc?export=download&id=1fBBLPFUASjjLPa7W8AupXQZvoaVsnqxC" class="button">Download Resume</a>
                 </div>
@@ -408,12 +410,23 @@
             <p class="footer__title">Mohammad Faaraan Askari</p>
             <div class="footer__social">
                 <a href="https://www.linkedin.com/in/faaraan72/" class="footer__icon"><i class='bx bxl-linkedin' ></i></a>
-                <a href="https://www.instagram.com/faaraan72/" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://www.instagram.com/faaraan_askari01/" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
                 <a href="https://github.com/Faaraan72" class="footer__icon"><i class='bx bxl-github' ></i></a>
             </div>
             <p class="footer__copy">&#169; All rigths reserved</p>
         </footer>
 
+ <!-- AUTO TYPE JS -->
+ <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+ <script>
+  var typed = new Typed("#auto_type",{
+      strings: ["Game Developer","AR || VR || 3D || 2D","Software Developer"],
+      typeSpeed:100,
+      backSpeed:100,
+      loop:true,
+  });
+ </script>
 
         <!--===== SCROLL REVEAL =====-->
         <script src="https://unpkg.com/scrollreveal"></script>
