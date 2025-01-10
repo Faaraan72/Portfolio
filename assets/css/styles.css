@@ -46,9 +46,83 @@
 *, ::before, ::after {
   box-sizing: border-box;
 }
+/* abcd-------------------------------------- */
+#scroll-effect
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* padding: 100px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+#scroll-effect::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#1c0522,transparent);
+    z-index: 1000;
+    overflow: hidden;
 
+}
+#scroll-effect img:not(#vr)
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    overflow: hidden;
+}
+section img#moon
+{
+    mix-blend-mode: screen;
+}
+section img#mountains_front
+{
+    z-index: 10;
+}
+#text
+{
+    position: absolute;
+    right: -100px;
+    color: var(--black);
+    white-space: nowrap;
+    font-size: 3vw;
+    z-index: 9;
+    
+}
+#vr {
+  position: absolute; /* Position it relative to the closest positioned parent */
+  top: 50%; /* Adjust placement vertically */
+  left: 50%; /* Adjust placement horizontally */
+  transform: translate(-50%, -110%); /* Center it horizontally and move it above the button */
+  width: 150px; /* Set desired width */
+  height: auto; /* Maintain aspect ratio */
+  z-index: 10; /* Ensure it appears above other elements */
+}
+#btn2
+{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    border-style: hidden;
+    background: #fff;
+    color: #2b1055;
+    font-size: 1.5rem;
+    z-index: 9;
+    transform:translateY(100px);
+}
+/* abcd------------------------------------- */
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
 }
 
 body {
