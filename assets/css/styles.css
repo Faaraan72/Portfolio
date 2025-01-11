@@ -1,6 +1,21 @@
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Courgette&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.cdnfonts.com/css/gravity-handwritten');
+@import url('https://fonts.cdnfonts.com/css/dungeon-depths');
+@font-face {
+  font-family: 'Dungeon Depths';
+  src: url('/assets/fonts/DungeonDepths-owJWV.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Signature';
+  src: url('/assets/fonts/RatherlafiaForghive-BWDZl.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 /*===== VARIABLES CSS =====*/
 :root {
   --header-height: 3rem;
@@ -24,6 +39,8 @@
   --h2-font-size: 1.25rem;
   --normal-font-size: .938rem;
   --smaller-font-size: .75rem;
+  --slider-font-size:2vw;
+  --right-value:-300px;
   /*===== Margenes =====*/
   --mb-2: 1rem;
   --mb-4: 2rem;
@@ -39,9 +56,14 @@
     --h2-font-size: 2rem;
     --normal-font-size: 1rem;
     --smaller-font-size: .875rem;
+    --slider-font-size: 3vw;
   }
 }
-
+@media screen and (max-width: 767px) {
+  :root {
+  --slider-font-size: 4vw;
+  --right-value:-300px;
+  }}
 /*===== BASE =====*/
 *, ::before, ::after {
   box-sizing: border-box;
@@ -69,7 +91,7 @@
     overflow: hidden;
 
 }
-#scroll-effect img:not(#vr)
+#scroll-effect img:not(#vr , #rocket)
 {
     position: absolute;
     top: 0;
@@ -91,21 +113,26 @@ section img#mountains_front
 #text
 {
     position: absolute;
-    right: -100px;
+    right: var(--right-value);
     color: var(--black);
     white-space: nowrap;
-    font-size: 3vw;
+    font-size: var(--slider-font-size);
     z-index: 9;
-    
+    font-family: 'Dungeon Depths';
+}
+#rocket{
+  transform: rotate(-90deg);
+  height: 20vw;
+  width: auto;
 }
 #vr {
   position: absolute; /* Position it relative to the closest positioned parent */
   top: 50%; /* Adjust placement vertically */
   left: 50%; /* Adjust placement horizontally */
-  transform: translate(-50%, -110%); /* Center it horizontally and move it above the button */
-  width: 150px; /* Set desired width */
+  transform: translate(-50%, -45%); /* Center it horizontally and move it above the button */
+  width: 250px; /* Set desired width */
   height: auto; /* Maintain aspect ratio */
-  z-index: 10; /* Ensure it appears above other elements */
+  z-index: -1; /* Ensure it appears above other elements */
 }
 #btn2
 {
@@ -115,10 +142,16 @@ section img#mountains_front
     border-radius: 40px;
     border-style: hidden;
     background: #fff;
-    color: #2b1055;
+    color: #110425;
     font-size: 1.5rem;
     z-index: 9;
     transform:translateY(100px);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+#btn2:hover {
+  background: rgba(255, 255, 255, 0.3); /* Make background translucent */
+  backdrop-filter: blur(5px); /* Add blur effect */
+  transform: translateY(100px) scale(1.1); /* Slightly increase size */
 }
 /* abcd------------------------------------- */
 html {
@@ -369,6 +402,7 @@ img {
   font-weight: var(--font-semi);
 }
 @media screen and (max-width: 767px) {
+ 
   .nav__menu {
     position: fixed;
     top: var(--header-height);
@@ -495,7 +529,15 @@ img {
 .button:hover {
   box-shadow: 0px 10px 36px rgba(255, 255, 255, 0.616);
 }
-
+.sign{
+  font-family: 'Signature';
+  font-size: var(--big-font-size);
+  position: absolute; /* Change from display to position */
+  top: 100%; /* Vertically center (adjust as needed) */
+  right: 0; /* Align to the right side */
+  /* transform: translateY(110%); Vertically center if needed */
+  color: var(--black);
+}
 /* ===== ABOUT =====*/
 .about__container {
   row-gap: 2rem;

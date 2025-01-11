@@ -59,11 +59,13 @@
             <img src="assets/img/moon.png" id="moon">
             
             <img src="assets/img/mountains_behind.png" id="mountains_behind">
-            <P id="text">Game Developer</P>
+            <!-- <P id="text"><img src="assets/video/rocketani.gif" alt="" id="rocket"></P> -->
+            <P id="text">GAME DEVELOPER</P>
+
             
             <div class="exploreBtn">
-            
-            <button id="btn2"><img id="vr" src="assets/img/VR_F.png" alt="">Explore</button>
+                <img id="vr" src="assets/img/VR_newvg.png" alt="">
+                <button id="btn2">Scroll to Start</button>
             </div>
 
             <img src="assets/img/mountains_front.png" id="mountains_front"> 
@@ -87,11 +89,12 @@
                 mountains_front.style.top = value * 0 + 'px';
                 text.style.marginRight = value * 2 + 'px';
                 text.style.marginTop = value * .5 + 'px';
-                // vrimg.style.marginTop = value * 0.5 + 'px';
+                 vrimg.style.marginTop = value * 1.5 + 'px';
                 btn2.style.marginTop = value * 1.5 + 'px';
                 header.style.top = value * 0.5 + 'px';
     
             })
+            
             document.getElementById('btn2').addEventListener('click', function() {
                 event.preventDefault();
              scrollToSection('home');
@@ -142,8 +145,12 @@
                         </g>
                     </svg>
                 </div>
+            <div class="sign"><p>MFaaraanAskari</p></div>
+              
             </section>
-
+            <br>
+            <br>
+            <br>
             <!--===== ABOUT =====-->
             <section class="about section " id="about">
                 <h2 class="section-title">About</h2>
