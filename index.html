@@ -43,6 +43,8 @@
                         <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
                         <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                        <li class="nav__item"><a href="https://faaraan72.itch.io/paratrooper-2019">ParaTrooper 2019</a></li>
+
                         <li class="nav__item"><img src="assets/img/d.png"  width="50px" height=auto class="nav__link" id="btn"></li>
 
                     </ul>
@@ -65,7 +67,7 @@
             
             <div class="exploreBtn">
                 <img id="vr" src="assets/img/VR_newvg.png" alt="">
-                <button id="btn2">Scroll to Start</button>
+                <button id="btn2">CONTACT ME</button>
             </div>
 
             <img src="assets/img/mountains_front.png" id="mountains_front"> 
@@ -97,7 +99,7 @@
             
             document.getElementById('btn2').addEventListener('click', function() {
                 event.preventDefault();
-             scrollToSection('home');
+             scrollToSection('contact');
                 });
             function scrollToSection(id) {
             const targetSection = document.getElementById(id);
@@ -118,6 +120,7 @@
        <!-- abc asdsd  ----------------------------------------------->
 
         <main class="l-main">
+        <div class="SectionOne">
             <!--===== HOME =====-->
             <section class="home bd-grid" id="home">
                 <div class="home__data">
@@ -131,6 +134,7 @@
                     <a href="https://www.linkedin.com/in/faaraan72/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
                     <!-- <a href="" class="home__social-icon"><i class='bx arrow from top' ></i></a> -->
                     <a href="https://github.com/Faaraan72" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                    <a class="home__social-icon"><p><i class='bx bxs-phone-call'></i> 6307328745 </p></a>
                 </div>
 
                 <div class="home__img">
@@ -169,7 +173,7 @@
                     </div>                                   
                 </div>
             </section>
-           
+        </div>
 
             <!--===== SKILLS =====-->
             <section class="skills section" id="skills">
@@ -283,6 +287,7 @@
                     </div>
                 </div>
             </section>
+        
             <!-- --==================Certifications------------------======================== -->
             <section class="about section " id="about">
                 <h2 class="section-title">Work Experience</h2>
@@ -295,15 +300,17 @@
                     <div>
                         <h2 class="about__subtitle">Wizar Learning Solutions pvt Ltd</h2>
                         <p class="about__text"><h4>Unity Developer · April 2024 to February 2025</h4><br>
-                            Developed "Cartesian Product," an AR-3D project, enhancing user interaction through advanced augmented reality features.<br>
-                            Engineered "Algorithmic and Sprite Movements," demonstrating expertise in algorithm design and sprite animation within a 
+                            -Developed multiple AR-based projects leveraging Unity's AR Foundation and Vuforia, enhancing user interaction with advanced augmented reality features.<br>
+                            -Engineered 7-8 ARLE's demonstrating expertise in algorithm design, animation within a AR-
                             3D environment. <br>
-                            Collaborated with cross-functional teams to integrate real-world data into AR applications, providing users with an immersive 
-                            and informative experience. <br>
+                            -Collaborated with cross-functional teams to integrate real-world data into AR applications, providing users with an immersive 
+                             and informative experience. <br>
+                            -Optimized AR workflows using Unity’s AR Foundation, ensuring scalability, performance, and cross-platform compatibility.
                             </p>           
                     </div>    
                 </section> 
              <!-- ========Internships========== -->
+              <div class="InternshpSection"></div>
              <section class="about section " id="about">
                 <h2 class="section-title">Internships</h2>
 
@@ -333,6 +340,7 @@
                             -Created a HyperCasual Game for Android Mobiles, named SoccerStriker. <br>
                             -Built Game Mechanics and User Friendly UI.<br>
                             -Implemented Real world Physics for the SoccerStriker through C# Scripts and Unity's Physics System.<br>
+                            -The Game got 5k+ downloads in less than a month, with a rating of 4.3 stars. <br>
                             The technologies used were Unity3D Editor, Visual studio code, C#.</p>
                             <a href="https://play.google.com/store/apps/details?id=com.SagaciSystems.SoccerStriker">Check Game Here</a>   
                                     
@@ -353,12 +361,12 @@
             </section>
 
             <!--===== Projects =====-->
-            <h2 class="section-title">Projects</h2>
+            <h2 class="section-title" id="work">Projects</h2>
             <div class="baba">
             <div class="carousel">
             <div class="slider">
                 <section>
-                    <a  class="work__img">
+                    <a  class="work__img" alt="Loading..">
                        <!-- <img src="assets/img/work1.jpg" alt=""> -->
                        <video src="./assets/video/p1.mp4" video controls muted ></video>
                     
@@ -370,26 +378,13 @@
                            • Story Mode map Completed. <br>
                            • has AI enemy and teammates <br>
                            • player can drive a car <br>
-                           • Under Progress</p>
+                           •Currently under development.</p>
                     
                       </span> 
                     </a>  
               </section>
-                <section>  <a  class="work__img">
-                      <!-- <img src="assets/img/work1.jpg" alt=""> -->
-                     <video src="./assets/video/p5.mp4" controls muted ></video>
-                     <span class="info">
-                      <h3>ZombieDefence</h3>
-                      <p class="about_project"> 
-                        Zombie Defence is a 2D Typing Game. <br>
-                        • Build While working for Crimson Insights<br>
-                        • 50 levels to Play, each gets more difficult<br>
-                        • Target Audience : kids. 
-                        </p>
-                     </span> 
-                     </a> 
-                </section>
-                <section> <a  class="work__img">
+                
+                <section> <a  class="work__img" alt="Loading..">
                       <!-- <img src="assets/img/work1.jpg" alt=""> -->
                      <video src="./assets/video/p2.mp4" controls muted ></video>
 
@@ -398,7 +393,7 @@
                       <p class="about_project">It is a Third-Person-View Car Driving Game Simulation. <br>
                     • Different Racing Formats, includingRaceAlone, FreeDrive, etc.<br>
                     • easy ,medium & hard difficulty tracks.<br>
-                    • Under Progress<br>
+                    
                       </p> 
                     
                        </span> 
@@ -406,7 +401,7 @@
                    </span> 
                         </a>
                  </section>
-                <section><a  class="work__img">
+                <section><a  class="work__img" alt="Loading..">
                     <!-- <img src="assets/img/work1.jpg" alt=""> -->
                        <video src="./assets/video/p6.mp4" controls muted ></video>
                      <span class="info">
@@ -419,7 +414,7 @@
                        </span> 
                      </a>
                </section>
-                <section> <a  class="work__img">
+                <section> <a  class="work__img" alt="Loading..">
                     <!-- <img src="assets/img/work1.jpg" alt=""> -->
                     <video src="./assets/video/mathAthon-2k24 (2).mp4" controls muted ></video>
                     
@@ -427,14 +422,44 @@
                     <h3>Math-A-Thon</h3>
                     <p class="about_project"> Math-A-Thon is a Endless Runner 3D Game. <br>
                         • Solve simple Math Equations in order to progress through game. <br>
-                        • Easy ,Medium, Hard & Expert difficulty settings. <br>
-                        • Under Progress
+                        • 30+ Levels to play and 5 unique characters to unlock <br>
+                        • Currently under development.
                         
                         </p>
                    </span> 
                 </a></section>
+                <section>  <a href="https://play.google.com/store/apps/details?id=typing.game.practice.word.zombie.attack" class="work__img" alt="Loading..">
+                    <!-- <img src="assets/img/work1.jpg" alt=""> -->
+                   <video src="./assets/video/p5.mp4" controls muted ></video>
+                   <span class="info">
+                    <h3>ZombieDefence</h3>
+                    <p class="about_project"> 
+                      Zombie Defence is a 2D Typing Game. <br>
+                      • Build While working for Crimson Insights<br>
+                      • 50 levels to Play, each gets more difficult<br>
+                      • 5k+ Downloads and 4 star rating on PlayStore. <br>
+                      </p>
+                   </span> 
+                   </a> 
+              </section>
+              <section>  <a href="https://faaraan72.itch.io/paratrooper-2019" class="work__img" alt="Loading..">
+                <!-- <img src="assets/img/work1.jpg" alt=""> -->
+               <video src="./assets/video/paraTrooper2019.mp4" controls muted ></video>
+               <span class="info">
+                <h3>ParaTrooper 2019</h3>
+                <p class="about_project"> 
+                    A 2D arcade shooter inspired by the classic Paratrooper. <br>
+                  • Implemented object pooling for bullets, helicopters, and paratroopers to optimize performance.<br>
+                  • Your mission is to protect your base from waves of enemy helicopters, jets, and paratroopers.<br>
+                  • With increasing difficulty, explosive moments, and unexpected airstrikes, every second<br>
+                   &nbsp;&nbsp;&nbsp;&nbsp;counts in this thrilling test of reflexes and strategy.<br>
+                  •  Can you hold the line? Tap to Play <br>
+                  </p>
+               </span> 
+               </a> 
+          </section>
                 <section>
-                    <a  class="work__img">
+                    <a  class="work__img" alt="Loading..">
                         <!-- <img src="assets/img/work1.jpg" alt=""> -->
                         <video src="./assets/video/p3.mp4" controls muted ></video>
                         
@@ -443,8 +468,8 @@
                         <p class="about_project"> Hand Cricket is a type of game where we mimic cricket by playing
                             cricket using our hands, just like Rock-Papers. <br>
                             • 2D , UI-based Game.<br>
-                            • has 3 different settings to play with (1,2,5 over)<br>
-                            • Under Progress<br>
+                            • Includes 3 match settings: 1, 2, or 5 overs.<br>
+                            • Simple, fun, and nostalgic gameplay.<br>
                             </p>
                        </span> 
                     </a>
@@ -470,7 +495,7 @@
     <li></li>
     <li></li>
     <li></li>
-    <!-- <li></li> -->
+    <li></li>
     <!-- <li></li> -->
     <!-- <li></li> -->
     <!-- <li></li> -->
@@ -509,6 +534,7 @@
                 <a href="https://www.linkedin.com/in/faaraan72/" class="footer__icon"><i class='bx bxl-linkedin' ></i></a>
                 <a href="https://www.instagram.com/faaraan_askari01/" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
                 <a href="https://github.com/Faaraan72" class="footer__icon"><i class='bx bxl-github' ></i></a>
+                <p><i class='bx bxs-phone-call'></i> 6307328745 </p>
             </div>
             <p class="footer__copy">&#169; All rigths reserved</p>
         </footer>

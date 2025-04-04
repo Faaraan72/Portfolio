@@ -4,7 +4,7 @@ const leftArrow = document.querySelector(".left");
 const rightArrow = document.querySelector(".right");
 const indicatorParents = document.querySelector('.slider-controls ul');
 let sectionIndex = 0;
-let numberOfSlide = 6;
+let numberOfSlide = 7;
 
 
 document.querySelectorAll('.slider-controls li').forEach(function (indicator, ind) {
@@ -43,11 +43,17 @@ addMultiEventListener(rightArrow, function () {
     if (sectionIndex < numberOfSlide - 1) {
         sectionIndex++;
         updateSlider();
+    }else{
+        sectionIndex =0;
+        updateSlider();
     }
 });
 addMultiEventListener(leftArrow, function () {
     if (sectionIndex > 0) {
         sectionIndex--;
+        updateSlider();
+    }else{
+        sectionIndex = numberOfSlide-1;
         updateSlider();
     }
 });
