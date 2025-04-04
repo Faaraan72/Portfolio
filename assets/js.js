@@ -1,11 +1,12 @@
 const slider = document.querySelector(".slider");
 
-const leftArrow = document.querySelector(".left");
-const rightArrow = document.querySelector(".right");
+//const leftArrow = document.querySelector(".left");
+//const rightArrow = document.querySelector(".right");
 const indicatorParents = document.querySelector('.slider-controls ul');
 let sectionIndex = 0;
 let numberOfSlide = 7;
-
+const leftArrow = document.getElementById("arrowLeft");
+const rightArrow = document.getElementById("arrowRight");
 
 document.querySelectorAll('.slider-controls li').forEach(function (indicator, ind) {
     indicator.addEventListener('click', function () {
