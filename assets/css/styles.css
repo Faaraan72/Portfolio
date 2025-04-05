@@ -633,26 +633,29 @@ img {
   border-radius: 0.5rem;
   
 }
-
+/* ======================INternship Section=================== */
+.InternshpSection{
+  display: grid;
+  grid-template-columns: 20px 1fr 1fr 1fr 20px;
+}
 /* ===== WORK =====*/
-.work__container {
-  display:  flex;
-  flex-direction: column;
+.ProjectsGrid {
+  display:  grid;
+  grid-template-columns: 20px 1fr 1fr 1fr 20px;
 }
 .work__img {
   box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
   border-radius: 0.5rem;
   display: flex;
-  flex-direction:  row;
-  padding-right: 20px;
+  flex-direction:  column;
+  /* padding-right: 20px; */
   color: black;
   margin-top: 5vh;
   
 }
 
-.work__img img {
-  transition: 1s;
-}
+/* .work__img img {
+  /* transition: 1s; */
 .work__img video{
    height:30vh;
    width: 30vw;
@@ -661,13 +664,21 @@ img {
   transform: scale(1.1);
 }
 .info{
-  margin-left: 1vw;
+  /* margin-left: 1vw; */
   color: var(--black);
 }
 .info a{
   color: var(--black);
 }
 @media (max-width: 768px) {
+  .InternshpSection{
+    display:  flex;
+    flex-direction: column;
+  }
+  .ProjectsGrid {
+    display:  flex;
+    flex-direction: column;
+  }
   .work__img {
       width: 90%;
       flex-direction: column;
