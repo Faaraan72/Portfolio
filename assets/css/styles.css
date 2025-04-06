@@ -828,7 +828,7 @@ grid-template-columns: 1fr 1fr 1fr;
   }
   .nav__list {
     display: flex;
-    padding-top: 0;
+    padding-top: 15px;
   }
   .nav__item {
     margin-left: var(--mb-6);
