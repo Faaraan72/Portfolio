@@ -561,12 +561,29 @@ img {
 }
 .about__img img {
   width: 200px;
-  border-radius: 0.5rem; transition: 1s;
+  border-radius: 5rem; transition: 1s;
 }
 .about__img img:hover {
   transform: scale(1.1); 
 }
-
+.i1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+}
+.i2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+}
+.i3{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+}
 /* ===== SKILLS =====*/
 .skills__container {
   row-gap: 2rem;
