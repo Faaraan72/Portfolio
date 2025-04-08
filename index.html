@@ -75,7 +75,7 @@
             
             <div class="exploreBtn">
                 <img id="vr" src="assets/img/VR_newvg.png" alt="">
-                <button id="btn2">CONTACT ME</button>
+                <button id="btn2">Scroll To Start</button>
             </div>
 
             <img src="assets/img/mountains_front.png" id="mountains_front"> 
@@ -107,7 +107,7 @@
             
             document.getElementById('btn2').addEventListener('click', function() {
                 event.preventDefault();
-             scrollToSection('contact');
+             scrollToSection('home');
                 });
             function scrollToSection(id) {
             const targetSection = document.getElementById(id);
@@ -163,6 +163,7 @@
             </section>
             <br>
             <br>
+            
             <br>
             <!--===== ABOUT =====-->
             <section class="about section " id="about">
@@ -536,7 +537,26 @@
                     </div>
                 </section>
             </div>
-           
+            <!-- <a  href="https://wa.me/+916307328745" class="stickyBtn"><p><i class='bx bxl-whatsapp'></i></p></a> -->
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <div class="floating-container">
+              <div class="floating-button">+</div>
+              <div class="element-container">
+            
+                <a href="tel:+916307328745" class="float-element tooltip-left"> <span >
+                  <i class="material-icons">phone
+                  </i></a>
+                </span>
+                <a href="mailto:mohdfaaraanaskari@gmail.com" class="float-element"><span >
+                    <i class="material-icons">email
+                 </i>
+                  </span></a>
+                  <a href="https://wa.me/+916307328745" class="float-element"><span >
+                    <i class="material-icons">chat</i>
+                  </span></a>
+                  
+              </div>
+            </div>
         </main>
 
         <!-- <iframe frameborder="0" src="https://itch.io/embed/3446981?border_width=5&amp;border_color=c7bcdd" width="560" height="175">
