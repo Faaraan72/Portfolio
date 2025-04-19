@@ -69,7 +69,7 @@
 *, ::before, ::after {
   box-sizing: border-box;
 }
-/* abcd-------------------------------------- */
+/* Scroll effect-------------------------------------- */
 #scroll-effect
 {
     position: relative;
@@ -88,7 +88,7 @@
     width: 100%;
     height: 100px;
     background: linear-gradient(to top,#1c0522,transparent);
-    z-index: 1000;
+    z-index: 11;
     overflow: hidden;
 
 }
@@ -490,12 +490,24 @@ img {
 .home__social-icon {
   width: max-content;
   margin-bottom: var(--mb-2);
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   color: var(--white);
   z-index: 10;
 }
 .home__social-icon:hover {
   color: var(--first-color);
+}
+.bxl-github:hover{
+  color: var(--black);
+}
+.bxl-linkedin:hover{
+  color: var(--first-color);
+}
+.bxl-whatsapp:hover{
+  color: greenyellow;
+}
+.bxl-instagram:hover{
+  color:  rgb(254, 90, 90);
 }
 .home__img {
   position: absolute;
@@ -940,7 +952,7 @@ grid-template-columns: 1fr 1fr 1fr;
   bottom: 0;
   right: 0;
   margin: 35px 25px;
-  z-index: 20;
+  z-index: 100;
 }
 .floating-container:hover {
   height: 300px;
