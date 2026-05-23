@@ -649,25 +649,9 @@ img {
   z-index: var(--z-back);
   
 }
-.skills__html {
-  width: 95%;
- 
-}
-.skills__C {
-  width: 90%;
-}
+.skills__Line {
+  width: 100%;
 
-.skills__css {
-  width: 70%;
-}
-.skills__js {
-  width: 75%;
-}
-.skills__game {
-  width: 90%;
-}
-.skills__db {
-  width: 75%;
 }
 .skills__img {
   border-radius: 0.5rem;

@@ -58,33 +58,91 @@
     box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
+/* Container that holds both videos side-by-side */
+.featured-videos-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory; 
+    -webkit-overflow-scrolling: touch; 
+    scrollbar-width: none; /* Hides scrollbar in Firefox */
+    scroll-behavior: smooth; /* Makes clicking the dots slide smoothly! */
+}
+
+.featured-videos-slider::-webkit-scrollbar {
+    display: none; /* Hides scrollbar in Chrome/Safari/Edge */
+}
+
+/* Forces each video wrapper to take up 100% of the screen width */
+.video-item {
+    flex: 0 0 100%;
+    scroll-snap-align: center; 
+}
+
+/* --- NEW DOT STYLES --- */
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px; /* Space between the two dots */
+    margin-top: 15px; /* Pushes dots slightly below the video */
+    padding-bottom: 20px;
+}
+
+.dot {
+    width: 14px;
+    height: 14px;
+    background-color: #b4b4b4; /* Dark grey dot color */
+    border-radius: 50%;
+    display: inline-block;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Make the dot pop slightly when a desktop user hovers over it */
+.dot:hover {
+    background-color: #007bff; /* Change this to match your portfolio's main accent color! */
+    transform: scale(1.2);
+}
 .backVideo {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
 }
-.VideoBg .btnGame {
-     position: absolute;
+/* Container handles the positioning and layout */
+.btn-container {
+    position: absolute;
     bottom: 16px;
     left: 50%;
     transform: translateX(-50%);
+    display: flex;
+    gap: 16px; /* Space between the side-by-side buttons */
+    z-index: 10;
+}
+
+/* Button handles only its own styling, no positioning */
+.VideoBg .btnGame {
     padding: 12px 24px;
     font-size: 16px;
     background-color: rgba(255, 255, 255, 0.85);
     border: none;
     border-radius: 6px;
     cursor: pointer;
+    white-space: nowrap; /* Prevents text from breaking onto two lines */
+    transition: background-color 0.3s ease;
 }
 
-.btnGame a {
+/* Ensure link text looks correct */
+.VideoBg .btnGame a {
     text-decoration: none;
     color: #000;
-    font-weight: bold;
+    font-weight: 600;
 }
+
+/* Mobile Adjustments */
 @media (max-width: 600px) {
     .videoWrapper {
-        aspect-ratio: auto; /* allow height to follow content */
+        aspect-ratio: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -95,10 +153,19 @@
         height: auto;
     }
 
-    .VideoBg .btnGame {
+    /* Move the container below the video on mobile */
+    .btn-container {
         position: static;
         margin-top: 16px;
         transform: none;
+        width: 100%;
+        justify-content: center; /* Keeps buttons centered side-by-side */
+    }
+
+    /* Make buttons slightly smaller on mobile to ensure two fit perfectly */
+    .VideoBg .btnGame {
+        padding: 10px 16px;
+        font-size: 14px;
     }
 }
 @keyframes flash {
