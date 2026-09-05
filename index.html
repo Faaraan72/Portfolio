@@ -1,663 +1,600 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mohammad Faaraan Askari - Unity & Multiplayer Systems Engineer specializing in Photon Fusion, Nakama, Netcode synchronization, and Python/MongoDB backend architecture.">
+    <title>Mohammad Faaraan Askari | Unity & Multiplayer Systems Engineer</title>
 
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <!-- ===== GOOGLE FONTS ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-        <title>Mohammad Faaraan Askari - Portfolio</title>
-       
-    </head>
-    
-    <body>
-        
-        <div class="area" >
-            <ul class="circles">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            </ul>
-        </div >
-        <!--===== HEADER =====-->
-        <header class="l-header blurred-box">
-            <nav class="nav bd-grid ">
-                <div>
-                    <a href="#" class="nav__logo">Mohammad Faaraan Askari</a>
-                </div>
+    <!-- ===== BOXICONS ===== -->
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">Experience</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                        <li class="nav__item"><a href="https://faaraan72.itch.io/">Itch.io
-                            <img src="assets/video/Notification-Bell.gif" 
-                            style="
-                             height: 30px;
-                             width: auto;
-                             position: relative;
-                             left: 40px;
-                             bottom: 30px;" 
-                            alt=""></a></li>
+    <!-- ===== MAIN STYLESHEET ===== -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
 
-                        <li class="nav__item"><img src="assets/img/d.png"  style="width:50px ;height:auto"  class="nav__link" id="btn"></li>
-
-                    </ul>
-                </div>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu '></i>
-                </div>
-            </nav>
-        </header>
-        <!-- abc asdsd  ----------------------------------------------------------------->
-        <section id="scroll-effect">
-            <img src="assets/img/stars.png" id="stars">
-            <img src="assets/img/moon.png" id="moon">
-            
-            <img src="assets/img/mountains_behind.png" id="mountains_behind">
-            <!-- <P id="text"><img src="assets/video/rocketani.gif" alt="" id="rocket"></P> -->
-            <P id="text">GAME DEVELOPER</P>
-
-            
-            <div class="exploreBtn">
-                <img id="vr" src="assets/img/VR_newvg.png" alt="">
-                <button id="btn2">Scroll To Start</button>
+    <!-- ===== HEADER / NAVBAR ===== -->
+    <header class="header">
+        <div class="container nav">
+            <div class="nav__brand">
+                <a href="#overview" class="nav__logo">FAARAAN ASKARI</a>
+                <span class="nav__badge">NETCODE & BACKEND</span>
             </div>
 
-            <img src="assets/img/mountains_front.png" id="mountains_front"> 
-            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="#overview" class="nav__link active">Overview</a></li>
+                    <li><a href="#skills" class="nav__link">Specifications</a></li>
+                    <li><a href="#projects" class="nav__link">Architecture</a></li>
+                    <li><a href="#experience" class="nav__link">Experience</a></li>
+                    <li><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+
+                <div class="nav__actions">
+                    <a href="https://drive.google.com/uc?export=download&id=1tJ3WZW8loDPpVTQKIBSCv1QLiJRkGuAN" target="_blank" class="btn-nav-resume">
+                        <i class="bx bx-download"></i> Resume
+                    </a>
+                </div>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="bx bx-menu"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ===== HERO / OVERVIEW SECTION ===== -->
+        <section class="hero section" id="overview">
+            <div class="container">
+                <div class="hero__status">
+                    <span class="status-dot"></span> AVAILABLE FOR MID/SENIOR MULTIPLAYER & BACKEND ROLES
+                </div>
+
+                <h1 class="hero__title">
+                    Unity & Multiplayer<br>
+                    <span class="text-gradient-cyan">Systems Engineer</span>
+                </h1>
+
+                <p class="hero__subtitle">
+                    Architecting real-time network synchronization, server-authoritative netcode loops, and high-concurrency Python backends for multiplayer games.
+                </p>
+
+                <div class="hero__cta-group">
+                    <a href="#projects" class="btn-primary">
+                        Explore Featured Systems <i class="bx bx-right-arrow-alt"></i>
+                    </a>
+                    <a href="https://drive.google.com/uc?export=download&id=1tJ3WZW8loDPpVTQKIBSCv1QLiJRkGuAN" target="_blank" class="btn-secondary">
+                        <i class="bx bx-file"></i> Technical Resume
+                    </a>
+                    <a href="https://github.com/Faaraan72" target="_blank" class="btn-secondary">
+                        <i class="bx bxl-github"></i> GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/faaraan72/" target="_blank" class="btn-secondary">
+                        <i class="bx bxl-linkedin"></i> LinkedIn
+                    </a>
+                </div>
+
+                <!-- Technical Telemetry Strip -->
+                <div class="telemetry-strip">
+                    <div class="telemetry-item">
+                        <span class="telemetry-value">100+ CCU</span>
+                        <span class="telemetry-label">Fusion Matchmaking</span>
+                        <span class="telemetry-desc">Real-Time Photon Sync</span>
+                    </div>
+                    <div class="telemetry-item">
+                        <span class="telemetry-value">&lt;120ms</span>
+                        <span class="telemetry-label">Network Latency</span>
+                        <span class="telemetry-desc">Tick-rate & Prediction</span>
+                    </div>
+                    <div class="telemetry-item">
+                        <span class="telemetry-value">10k+</span>
+                        <span class="telemetry-label">Live App Downloads</span>
+                        <span class="telemetry-desc">Published Mobile Games</span>
+                    </div>
+                    <div class="telemetry-item">
+                        <span class="telemetry-value">30% ↑</span>
+                        <span class="telemetry-label">Shot Accuracy Boost</span>
+                        <span class="telemetry-desc">Physics Trajectory Tuning</span>
+                    </div>
+                </div>
+            </div>
         </section>
-        <script>
-            let stars = document.getElementById('stars');
-            let moon = document.getElementById('moon');
-            let mountains_behind = document.getElementById('mountains_behind');
-            let text = document.getElementById('text');
-            let vrimg =document.getElementById('vr');
-            let btn2 = document.getElementById('btn2');
-            let mountains_front = document.getElementById('mountains_front');
-            let header = document.getElementById('header');
-    
-            window.addEventListener('scroll', function(){
-                let value = window.scrollY;
-                stars.style.left = value * 0.25 + 'px';
-                moon.style.top = value * 1.05 + 'px';
-                mountains_behind.style.top = value * 0.5 + 'px';
-                mountains_front.style.top = value * 0 + 'px';
-                text.style.marginRight = value * 2 + 'px';
-                text.style.marginTop = value * .5 + 'px';
-                 vrimg.style.marginTop = value * 1.5 + 'px';
-                btn2.style.marginTop = value * 1.5 + 'px';
-                //header.style.top = value * 0.5 + 'px';
-    
-            })
-            
-            document.getElementById('btn2').addEventListener('click', function() {
-                event.preventDefault();
-             scrollToSection('home');
-                });
-            function scrollToSection(id) {
-            const targetSection = document.getElementById(id);
 
-            if (targetSection) {
-                const offsetTop = targetSection.offsetTop;
-
-                window.scrollTo({
-                     top: offsetTop,
-                    behavior: 'smooth', 
-             });
-    } else {
-        console.error(`Element with id "${id}" not found.`);
-    }
-}
-        </script>
-        
-       <!-- abc asdsd  ----------------------------------------------->
-
-        <main class="l-main">
-        <div class="SectionOne">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I am <span class="home__title-color">FAARAAN</span></h1>
-                    <h1><span id="auto_type"></span></h1>
-                    <br>
-                    <a href="https://drive.google.com/uc?export=download&id=1hbKxfhP0qIDeRlTmLL2-10c3l8VxuyWo" class="button">Download Resume</a>
+        <!-- ===== TECHNICAL SPECIFICATIONS & SKILLS ===== -->
+        <section class="skills section" id="skills">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <span class="section-tag">[ TECHNICAL SPECS ]</span>
+                    <h2 class="section-title">Engineering Domain Competencies</h2>
                 </div>
 
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/faaraan72/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <!-- <a href="" class="home__social-icon"><i class='bx arrow from top' ></i></a> -->
-                    <a href="https://github.com/Faaraan72" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                    <a  href="https://wa.me/+916307328745" class="home__social-icon"><p><i class='bx bxl-whatsapp'></i></p></a>
-                    <a href="https://www.instagram.com/faaraan_askari01/" class="home__social-icon"><i class='bx bxl-instagram' ></i></a>
-                </div>
+                <div class="skills-grid">
+                    <!-- Domain 1: Netcode & Multiplayer -->
+                    <div class="skill-card">
+                        <div class="skill-card__header">
+                            <div class="skill-card__icon"><i class="bx bx-wifi"></i></div>
+                            <h3 class="skill-card__title">Multiplayer & Netcode</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li class="skill-item"><span class="skill-bullet">▹</span> Photon Fusion (Host/Client & Shared Mode)</li>
+                            <li class="skill-item"><span class="skill-bullet">▹</span> Nakama & Unity Netcode for GameObjects (NGO)</li>
+                            <li class="skill-item"><span class="skill-bullet">▹</span> Client-Side Prediction & Server Reconciliation</li>
+                            <li class="skill-item"><span class="skill-bullet">▹</span> RPC Architecture & Network Variable Sync</li>
+                            <li class="skill-item"><span class="skill-bullet">▹</span> Latency Mitigation & Entity Interpolation</li>
+                        </ul>
+                    </div>
 
-                <div class="home__img">
-                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <mask id="mask0" mask-type="alpha">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                            <image class="home__blob-img" x="50" y="60" href="assets/video/blueWhiteVideo-unscreen.gif"/>
-                           
-                        </g>
-                    </svg>
-                   
+                    <!-- Domain 2: Engine Core & C# -->
+                    <div class="skill-card">
+                        <div class="skill-card__header">
+                            <div class="skill-card__icon"><i class="bx bx-code-alt"></i></div>
+                            <h3 class="skill-card__title">Engine Core & C#</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li class="skill-item"><span class="skill-bullet">▹</span> Unity 3D/2D Engine Architecture & Systems</li>
+                            <li class="skill-item"><span class="skill-bullet">▹</span> C# (Async/Await, Custom Data Structures)</li>
+                            <li class="skill-item"><span class="skill-bullet">▹</span> Memory Profiling & Frame-Rate Optimization</li>
+                            <li class="skill-item"><span class="skill-bullet">▹</span> Addressable Assets & AssetBundles Pipeline</li>
+                            <li class="skill-item"><span class="skill-bullet">▹</span> Object Pooling & Deterministic Physics</li>
+                        </ul>
+                    </div>
+
+                    <!-- Domain 3: Backend & DevOps Infrastructure -->
+                    <div class="skill-card">
+                        <div class="skill-card__header">
+                            <div class="skill-card__icon"><i class="bx bx-server"></i></div>
+                            <h3 class="skill-card__title">Backend & DevOps</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li class="skill-item"><span class="skill-bullet">▹</span> Docker (Game Server Containerization)</li>
+                            <li class="skill-item"><span class="skill-bullet">▹</span> Edgegap (Global Server Orchestration)</li>
+                            <li class="skill-item"><span class="skill-bullet">▹</span> Python (FastAPI, Flask, Async IO)</li>
+                            <li class="skill-item"><span class="skill-bullet">▹</span> MongoDB (Schema Design & Aggregations)</li>
+                            <li class="skill-item"><span class="skill-bullet">▹</span> Firebase Auth, Firestore & WebSockets</li>
+                        </ul>
+                    </div>
+
+                    <!-- Domain 4: Platforms & XR Pipeline -->
+                    <div class="skill-card">
+                        <div class="skill-card__header">
+                            <div class="skill-card__icon"><i class="bx bx-mobile-alt"></i></div>
+                            <h3 class="skill-card__title">Platforms & XR Pipeline</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li class="skill-item"><span class="skill-bullet">▹</span> Meta Quest VR & Meta Movement SDK</li>
+                            <li class="skill-item"><span class="skill-bullet">▹</span> Mobile Deployment (iOS Xcode & Android Gradle)</li>
+                            <li class="skill-item"><span class="skill-bullet">▹</span> AR / XR (AR Foundation, Vuforia, MockHMD)</li>
+                            <li class="skill-item"><span class="skill-bullet">▹</span> Monetization & Analytics SDK Integration</li>
+                            <li class="skill-item"><span class="skill-bullet">▹</span> Git Version Control & CI/CD Pipelines</li>
+                        </ul>
+                    </div>
                 </div>
-            <div class="sign"><p>MFAskari</p></div>
-            </section>
-            <br>
-            <br>
-            
-            <br>
-<!--===== FEATURED VIDEOS SLIDER =====-->
-<div class="slider-wrapper">
-    
-    <div class="featured-videos-slider">
-        <!-- Video 1 (Note the id="slide1") -->
-                 <div class="VideoBg video-item" id="slide1">
-            <div class="videoWrapper">
-                <video class="backVideo" muted loop autoplay>
-                 <source src="assets/video/TennisFreak.webm" type="video/webm">
-                 Your browser does not support the video tag.
-                </video>
-             <div class="btn-container">
-                <button class="btnGame"><a href="https://play.google.com/store/search?q=Tennis%20Freak&c=apps&hl=en_IN">Play on Android</a></button>
-                <button class="btnGame"><a href="https://apps.apple.com/in/app/tennis-freak/id6756810435">Play on IOS</a></button>
             </div>
+        </section>
 
+        <!-- ===== FEATURED PROJECTS & SYSTEMS SHOWCASE ===== -->
+        <section class="projects section" id="projects">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <span class="section-tag">[ SYSTEMS SHOWCASE ]</span>
+                    <h2 class="section-title">Featured Projects & Network Architecture</h2>
+                </div>
+
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All Systems</button>
+                    <button class="filter-btn" data-filter="multiplayer">Multiplayer & Netcode</button>
+                    <button class="filter-btn" data-filter="simulation">Engine & Simulation</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile & AR</button>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: VR Multiplayer Tennis (Active Dev) -->
+                    <div class="project-card" data-category="multiplayer simulation mobile">
+                        <div class="project-card__media">
+                            <span class="project-card__badge" style="background: var(--accent-cyan); color: var(--text-inverse);">● IN ACTIVE DEVELOPMENT</span>
+                            <img src="assets/img/VRTennis_Dev.jpg" alt="Faaraan Askari testing Meta Quest 3 VR Multiplayer Tennis" class="project-card__video" style="object-fit: cover; object-position: center top;">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">VR Multiplayer Tennis</h3>
+                            <p class="project-card__desc">
+                                Dedicated server VR tennis simulation developed for Meta Quest. Powered by Docker containerized game servers and Edgegap global orchestration for ultra-low latency matchmaking.
+                            </p>
+                            <div class="project-card__specs">
+                                <div class="spec-item"><span class="spec-bullet">✓</span> Docker Dedicated Servers & Edgegap Orchestration</div>
+                                <div class="spec-item"><span class="spec-bullet">✓</span> Meta Movement SDK & Auto Height Calibration</div>
+                                <div class="spec-item"><span class="spec-bullet">✓</span> Networked VR Racket Collisions & Ball Prediction</div>
+                            </div>
+                            <div class="project-card__tags">
+                                <span class="tag">Meta Quest VR</span>
+                                <span class="tag">Docker</span>
+                                <span class="tag">Edgegap</span>
+                                <span class="tag">Photon Fusion</span>
+                                <span class="tag">C#</span>
+                            </div>
+                            <div class="project-card__platforms">
+                                <div class="platform-icons">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" title="Meta Quest VR"><path d="M21 7.5H3C1.9 7.5 1 8.4 1 9.5v5c0 1.1.9 2 2 2h3.5c.8 0 1.5-.4 1.8-1.1l1.2-2.4c.3-.5.8-.8 1.4-.8h.2c.6 0 1.1.3 1.4.8l1.2 2.4c.3.7 1 1.1 1.8 1.1H21c1.1 0 2-.9 2-2v-5c0-1.1-.9-2-2-2zm-14.5 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm11 0c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/></svg>
+                                    <i class="bx bxl-windows" title="Windows PC Dedicated Server"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: CapsBall Multiplayer Mobile -->
+                    <div class="project-card" data-category="multiplayer mobile">
+                        <div class="project-card__media">
+                            <span class="project-card__badge">FLAGSHIP MULTIPLAYER</span>
+                            <video class="project-card__video" muted loop preload="none" controls poster="assets/img/CapsBall.png">
+                                <source src="assets/video/CapsBallv2.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">CapsBall Multiplayer Mobile</h3>
+                            <p class="project-card__desc">
+                                Real-time physics-based multiplayer football built in Unity with Netcode. Features server-authoritative spawn/despawn cleanup, client-side state prediction, and synchronized room timers and scores.
+                            </p>
+                            <div class="project-card__specs">
+                                <div class="spec-item"><span class="spec-bullet">✓</span> Server Authoritative Spawning & Despawning</div>
+                                <div class="spec-item"><span class="spec-bullet">✓</span> Real-Time Client State & UI Synchronization</div>
+                                <div class="spec-item"><span class="spec-bullet">✓</span> Latency Mitigation via Interpolation</div>
+                            </div>
+                            <div class="project-card__tags">
+                                <span class="tag">Photon Fusion</span>
+                                <span class="tag">Netcode</span>
+                                <span class="tag">C#</span>
+                                <span class="tag">Server Authoritative</span>
+                            </div>
+                            <div class="project-card__platforms">
+                                <div class="platform-icons">
+                                    <i class="bx bxl-android" title="Android"></i>
+                                    <i class="bx bxl-apple" title="iOS"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Tennis Freak 3D -->
+                    <div class="project-card" data-category="multiplayer mobile">
+                        <div class="project-card__media">
+                            <span class="project-card__badge">PUBLISHED MOBILE</span>
+                            <video class="project-card__video" muted loop preload="none" controls poster="assets/img/TennisFreak.png">
+                                <source src="assets/video/TennisFreak.webm" type="video/webm">
+                            </video>
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Tennis Freak 3D</h3>
+                            <p class="project-card__desc">
+                                Solo-engineered 3D multiplayer tennis game supporting 100+ concurrent players at &lt;120ms latency. Integrates Firebase authentication, cloud save, and custom swipe trajectory physics.
+                            </p>
+                            <div class="project-card__specs">
+                                <div class="spec-item"><span class="spec-bullet">✓</span> Implemented Fusion multiplayer architecture to handle real-time state sync and custom matchmaking, capable of orchestrating 50+ concurrent 1v1 matches (100+ CCU) with &lt;120ms latency.</div>
+                                <div class="spec-item"><span class="spec-bullet">✓</span> Firebase Auth, Firestore & Analytics</div>
+                                <div class="spec-item"><span class="spec-bullet">✓</span> 30% Higher Trajectory Accuracy Math</div>
+                            </div>
+                            <div class="project-card__tags">
+                                <span class="tag">Photon Fusion</span>
+                                <span class="tag">Firebase</span>
+                                <span class="tag">iOS & Android</span>
+                                <span class="tag">Physics</span>
+                            </div>
+                            <div class="project-card__links">
+                                <a href="https://play.google.com/store/search?q=Tennis%20Freak&c=apps&hl=en_IN" target="_blank" class="btn-project">
+                                    <i class="bx bxl-android"></i> Android
+                                </a>
+                                <a href="https://apps.apple.com/in/app/tennis-freak/id6756810435" target="_blank" class="btn-project">
+                                    <i class="bx bxl-apple"></i> iOS
+                                </a>
+                            </div>
+                            <div class="project-card__platforms">
+                                <div class="platform-icons">
+                                    <i class="bx bxl-android" title="Android"></i>
+                                    <i class="bx bxl-apple" title="iOS"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Operation Air Siege -->
+                    <div class="project-card" data-category="simulation">
+                        <div class="project-card__media">
+                            <span class="project-card__badge">PC COMBAT SIM</span>
+                            <video class="project-card__video" muted loop preload="none" controls poster="assets/img/OperationAirSeige.png">
+                                <source src="assets/video/AircraftGameplayWeb.webm" type="video/webm">
+                            </video>
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Operation Air Siege</h3>
+                            <p class="project-card__desc">
+                                Tactical flight combat simulator featuring aerodynamic lift & torque physics, missile guidance targeting logic, and dynamic camera rig loops.
+                            </p>
+                            <div class="project-card__specs">
+                                <div class="spec-item"><span class="spec-bullet">✓</span> Aerodynamic Flight Torque & Lift Math</div>
+                                <div class="spec-item"><span class="spec-bullet">✓</span> Missile Guidance Lock-On Systems</div>
+                            </div>
+                            <div class="project-card__tags">
+                                <span class="tag">Unity 3D</span>
+                                <span class="tag">Aerodynamics</span>
+                                <span class="tag">C#</span>
+                                <span class="tag">PC</span>
+                            </div>
+                            <div class="project-card__links">
+                                <a href="https://faaraan72.itch.io/operation-air-seig" target="_blank" class="btn-project">
+                                    <i class="bx bx-game"></i> Play on Itch.io
+                                </a>
+                            </div>
+                            <div class="project-card__platforms">
+                                <div class="platform-icons">
+                                    <i class="bx bxl-windows" title="Windows PC"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: DeathMatch PC Tactical Shooter -->
+                    <div class="project-card" data-category="simulation">
+                        <div class="project-card__media">
+                            <span class="project-card__badge">TACTICAL AI</span>
+                            <video class="project-card__video" muted loop preload="none" controls poster="assets/img/DeathmatchPC.png">
+                                <source src="assets/video/p1.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">DeathMatch PC Tactical Shooter</h3>
+                            <p class="project-card__desc">
+                                Third-person tactical shooter featuring team AI behaviors (NavMesh), weapon recoil & spread algorithms, vehicle driving loops, and multi-map state management.
+                            </p>
+                            <div class="project-card__specs">
+                                <div class="spec-item"><span class="spec-bullet">✓</span> Squad AI Navigation & Tactical Cover</div>
+                                <div class="spec-item"><span class="spec-bullet">✓</span> Weapon Recoil & Spread Mathematical Models</div>
+                            </div>
+                            <div class="project-card__tags">
+                                <span class="tag">Unity 3D</span>
+                                <span class="tag">NavMesh AI</span>
+                                <span class="tag">C#</span>
+                                <span class="tag">PC</span>
+                            </div>
+                            <div class="project-card__platforms">
+                                <div class="platform-icons">
+                                    <i class="bx bxl-windows" title="Windows PC"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: SoccerStriker Mobile -->
+                    <div class="project-card" data-category="mobile">
+                        <div class="project-card__media">
+                            <span class="project-card__badge">10K+ DOWNLOADS</span>
+                            <video class="project-card__video project-card__video--portrait" muted loop preload="none" controls poster="assets/img/SoccerStriker.png">
+                                <source src="assets/video/ScoccerStrikerProject.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">SoccerStriker Mobile</h3>
+                            <p class="project-card__desc">
+                                Mobile sports title built with C# & Unity Physics. Features real-world ball physics, goal detection algorithms, and player shooting mechanics. Reached 10k+ downloads.
+                            </p>
+                            <div class="project-card__specs">
+                                <div class="spec-item"><span class="spec-bullet">✓</span> 10,000+ Google Play Downloads</div>
+                                <div class="spec-item"><span class="spec-bullet">✓</span> 4.3 Star User Rating</div>
+                            </div>
+                            <div class="project-card__tags">
+                                <span class="tag">Unity 3D</span>
+                                <span class="tag">C#</span>
+                                <span class="tag">Play Store</span>
+                            </div>
+                            <div class="project-card__links">
+                                <a href="https://play.google.com/store/search?q=SoccerStriker" target="_blank" class="btn-project">
+                                    <i class="bx bxl-android"></i> Download Game
+                                </a>
+                            </div>
+                            <div class="project-card__platforms">
+                                <div class="platform-icons">
+                                    <i class="bx bxl-android" title="Android"></i>
+                                    <i class="bx bxl-apple" title="iOS"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="VideoBg video-item" id="slide2">
-            <div class="videoWrapper">
-                <video class="backVideo" muted loop autoplay>
-                 <source src="assets/video/AircraftGameplayWeb.webm" type="video/webm">
-                 Your browser does not support the video tag.
-                </video>
-             <div class="btn-container">
-                <button class="btnGame"><a href="https://faaraan72.itch.io/operation-air-seig">Play Now on PC</a></button>
+        </section>
+
+        <!-- ===== PROFESSIONAL EXPERIENCE & TRACK RECORD ===== -->
+        <section class="experience section" id="experience">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <span class="section-tag">[ TRACK RECORD ]</span>
+                    <h2 class="section-title">Professional Engineering Experience</h2>
+                </div>
+
+                <div class="timeline">
+                    <!-- Experience 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-content">
+                            <div class="timeline__header">
+                                <div>
+                                    <h3 class="timeline__company">Shaurya Infosoft</h3>
+                                    <p class="timeline__role">Unity & Multiplayer Developer</p>
+                                </div>
+                                <span class="timeline__date">June 2025 – Present</span>
+                            </div>
+                            <div class="timeline__bullets">
+                                <div class="timeline__bullet">Architecting a dedicated-server VR Multiplayer Tennis simulation for Meta Quest hardware using Docker containerization and Edgegap global orchestration.</div>
+                                <div class="timeline__bullet">Solo-engineered Tennis Freak 3D from prototype through mobile production, managing gameplay physics, netcode sync, and cross-platform mobile deployment.</div>
+                                <div class="timeline__bullet">Implemented Fusion multiplayer architecture for real-time state sync & custom matchmaking, supporting 50+ concurrent 1v1 matches (100+ CCU) at &lt;120ms latency.</div>
+                                <div class="timeline__bullet">Integrated full-stack Python backend microservices & MongoDB database for server-side virtual currency processing and inventory persistence.</div>
+                                <div class="timeline__bullet">Integrated Firebase (Google Play/Game Center Auth, Firestore, Analytics) across 1,000+ live test sessions.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-content">
+                            <div class="timeline__header">
+                                <div>
+                                    <h3 class="timeline__company">Wizar Learning Solutions</h3>
+                                    <p class="timeline__role">Unity Developer</p>
+                                </div>
+                                <span class="timeline__date">April 2024 – Feb 2025</span>
+                            </div>
+                            <div class="timeline__bullets">
+                                <div class="timeline__bullet">Developed 10+ AR learning environments using Unity AR Foundation and Vuforia.</div>
+                                <div class="timeline__bullet">Integrated Addressables and AssetBundles to streamline asset streaming, reducing load times by 40%.</div>
+                                <div class="timeline__bullet">Collaborated with cross-functional teams to render real-world telemetry in 3D AR viewports.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-content">
+                            <div class="timeline__header">
+                                <div>
+                                    <h3 class="timeline__company">Crimson Insights</h3>
+                                    <p class="timeline__role">Unity Developer Intern</p>
+                                </div>
+                                <span class="timeline__date">Aug 2023 – Nov 2023</span>
+                            </div>
+                            <div class="timeline__bullets">
+                                <div class="timeline__bullet">Engineered 2D casual typing title "Zombie Attack", building UI architecture and core game loops in C#.</div>
+                                <div class="timeline__bullet">Integrated IronSource Ads SDK for monetization pipelines.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience 4 -->
+                    <div class="timeline-item">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-content">
+                            <div class="timeline__header">
+                                <div>
+                                    <h3 class="timeline__company">Sagaci Studios</h3>
+                                    <p class="timeline__role">Unity3D Developer Intern</p>
+                                </div>
+                                <span class="timeline__date">May 2023 – June 2023</span>
+                            </div>
+                            <div class="timeline__bullets">
+                                <div class="timeline__bullet">Built hyper-casual mobile title "SoccerStriker", reaching 10,000+ downloads and a 4.3 star rating on Google Play.</div>
+                                <div class="timeline__bullet">Implemented custom C# physics loops for ball trajectories and goal detection.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience 5 -->
+                    <div class="timeline-item">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-content">
+                            <div class="timeline__header">
+                                <div>
+                                    <h3 class="timeline__company">HawkVisum Pvt. Ltd.</h3>
+                                    <p class="timeline__role">VR Developer Intern</p>
+                                </div>
+                                <span class="timeline__date">Apr 2023 – June 2023</span>
+                            </div>
+                            <div class="timeline__bullets">
+                                <div class="timeline__bullet">Programmed C# interaction logic for VR aviation cabin crew emergency training simulations.</div>
+                                <div class="timeline__bullet">Utilized MockHMD frameworks to simulate VR interaction loops without physical hardware.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            </div>
-        </div>
+        </section>
 
-        <!-- Video 2 (Note the id="slide2") -->
-
-    </div>
-
-    <!-- The Navigation Dots -->
-    <div class="slider-dots">
-        <a href="#slide1" class="dot"></a>
-        <a href="#slide2" class="dot"></a>
-    </div>
-
-</div>
-            <!--===== ABOUT =====-->
-            <!-- <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/sky_blue_suit.jpeg" alt="">
-                    </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">Unity Game Developer</h2>
-                        <p class="about__text">I'm a Unity Game Developer with a strong foundation in 
-                            Computer Science and a passion for building immersive, engaging game experiences.
-                            With hands-on experience in developing AR, VR, and mobile games, 
-                            I’ve brought ideas to life—from casual 2D games to interactive simulations 
-                            and third-person shooters. I specialize in C# scripting, real-time gameplay mechanics,
-                            and optimizing performance across platforms. Whether it’s crafting hyper-casual hits 
-                            or working on cutting-edge XR projects, I’m driven by creativity, innovation, 
-                            and the constant pursuit of better gameplay.</p>           
-                    </div>                                   
+        <!-- ===== CONTACT SECTION ===== -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <span class="section-tag">[ CONNECT ]</span>
+                    <h2 class="section-title">Initiate Technical Contact</h2>
                 </div>
-            </section> -->
-        </div>
 
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <h2 class="skills__subtitle">Profesional Skills</h2>
-                        <!-- <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p> -->
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <!-- <i class='bx bxl-html5 skills__icon'></i> -->
-                                <span class="skills__name">Unity Engine & Architecture</span>
-                                
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <a href="mailto:mohdfaaraanaskari@gmail.com" class="contact-card">
+                            <div class="contact-icon"><i class="bx bx-envelope"></i></div>
+                            <div>
+                                <div class="contact-title">Direct Email</div>
+                                <div class="contact-value">mohdfaaraanaskari@gmail.com</div>
                             </div>
-                            <div class="skills__bar skills__Line"></div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <!-- <i class='bx bxl-html5 skills__icon'></i> -->
-                                <span class="skills__name">C# & Object-Oriented Programming</span>
-                                
-                            </div>
-                            <div class="skills__bar skills__Line"></div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <!-- <span><iconify-icon icon="mdi:unity"></iconify-icon></span> -->
-                                <span class="skills__name">Multiplayer & Networking</span>
-                            </div>
-                            <div class="skills__bar skills__Line"></div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <!-- <i class='bx bxl-css3 skills__icon'></i> -->
-                                <span class="skills__name">Backend & Database Systems</span>
-                            </div>
-                            <div class="skills__bar skills__Line"></div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <!-- <span><iconify-icon icon="mdi:unity"></iconify-icon></span> -->
-                                <span class="skills__name">Mobile Optimization (iOS/Android)</span>
-                            </div>
-                            <div class="skills__bar skills__Line"></div>
-                        </div>
-                       
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <!-- <i class='bx bxs-paint skills__icon'></i> -->
-                                <span class="skills__name">Monetization & SDK Integration</span>
-                            </div>
-                            <div class="skills__bar skills__Line"></div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <!-- <i class='bx bxs-paint skills__icon'></i> -->
-                                <span class="skills__name">Database: Firebase--MySql--MongoDB </span>
-                            </div>
-                            <div class="skills__bar skills__Line"></div>
-                        </div>
-                    </div>
-                    
-                    <div>              
-                        <!-- <img src="assets/img/3blueWhiteAvatar.png" alt="" class="skills__img"> -->
-                        <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <mask id="mask0" mask-type="alpha">
-                                <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                            </mask>
-                            <g mask="url(#mask0)">
-                                <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                                <image class="home__blob-img" x="25" y="30" href="assets/img/3blueWhiteAvatar.png"/>
-                               
-                            </g>
-                        </svg> 
-                    </div>
-                </div>
-            </section>
-        
-            <!-- --==================Certifications------------------======================== -->
-            <section class="about section " id="about">
-                <h2 class="section-title">Work Experience</h2>
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/shauryainfosoft_logo.jpeg" alt="">
-                    </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">Shaurya Infosoft</h2>
-                        <p class="about__text"><h4>Unity Developer · June 2025 to Present</h4><br>
-                            -Building a 3D Tennis Game from scratch as a solo developer, handling complete design, development, and deployment.<br>
-                            -Implemented Fusion multiplayer with matchmaking and real-time sync, supporting 100+ concurrent players with less than 120ms latency. <br>
-                            -Integrated Firebase (Google Play Auth, Firestore, Analytics) to enable secure login, cloud saves, and performance tracking across 1,000+ test sessions. <br>
-                            -Designed and optimized swipe-to-shoot mechanics, ball physics, and trajectory prediction, achieving 30% higher shot accuracy compared to early builds.
-                            </p>           
-                    </div> 
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/wizar-logo.png" alt="">
-                    </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">Wizar Learning Solutions pvt Ltd</h2>
-                        <p class="about__text"><h4>Unity Developer · April 2024 to February 2025</h4><br>
-                            -Developed AR-based projects leveraging Unity's AR Foundation and Vuforia, enhancing user interaction with advanced AR features.<br>
-                            -Engineered 10+ ARLE's demonstrating expertise in algorithm design, animation within a AR-3D environment.<br>
-                            -Collaborated with cross-functional teams to integrate real-world data into AR applications, providing users with an immersive and informative experience. <br>
-                            -Integrated Addressables and Asset Bundles to streamline asset management, reducing game load time and improving memory management.
-                            </p>           
-                    </div>    
-         </section> 
-             <!-- ========Internships========== -->
-             <!-- <section class="about section " id="about"> -->
-                <h2 class="section-title">Internships</h2>
-            <div class="InternshpSection">
-                <div class="margin"></div>
-               <div class="i1">
-                    <div class="about__img">
-                        <img src="assets/img/crimsonInsights_up.jpeg" alt="">
-                    </div>
-
-                    <div>
-                        <h2 class="about__subtitle">Crimson Insights</h2>
-                        <p class="about__text">Unity Developer · Aug. 2023 to November 2023 <br>
-                            -Developed a 2D Casual Typing Game called "Zombie Attack". <br>
-                            -Designed a Interactive & Responsive UI for the Game. <br>
-                            -Wrote the whole Game Mechanics in C# scripts. <br>
-                            -Integration of Ironsource Ads. <br>
-                           <button class="btnGame"><a href="https://play.google.com/store/apps/details?id=typing.game.practice.word.zombie.attack"> Check Game Here!</a></button> 
-                            </p>           
-                    </div>     
-                </div>
-                <div class="i2">
-                    <div class="about__img">
-                        <img src="assets/img/sagaci_up.jpeg" alt="">
-                    </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">Sagaci Studios</h2>
-                        <p class="about__text">Unity3D Developer · May 2023 to June 2023 <br>
-                            -Created a HyperCasual Game for Android Mobiles, named SoccerStriker. <br>
-                            -Built Game Mechanics and User Friendly UI.<br>
-                            -Implemented Real world Physics for the SoccerStriker through C# Scripts and Unity's Physics System.<br>
-                            -The Game got 5k+ downloads in less than a month, with a rating of 4.3 stars. <br>
-                            The technologies used were Unity3D Editor, Visual studio code, C#.</p>
-                            <button class="btnGame"><a href="https://play.google.com/store/apps/details?id=com.SagaciSystems.SoccerStriker">Download Game</a> </button>  
-                                    
-                    </div> 
-                </div> 
-                <div class="i3">
-                    <div class="about__img">
-                        <img src="assets/img/hawkvisum_up.jpeg" alt="">
-                    </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">HawkVisum Pvt. Ltd.</h2>
-                        <p class="about__text">Unity Developer · Apr. 2023 to June 2023 <br>
-                            -I worked on a VR Aviation Project, my main tasks were Programming for Cabin crew Simulation. <br>
-                            -Implemented C# code for the Cabin Crew Simulation. <br>
-                            -Supervsed the 3D models,build by other Interns for the Project. <br>
-                            The Technologies Used were Unity3D Editor, Visual Studio Code, MockHMD, and C#.</p>           
-                    </div> 
-                </div>
-                <div class="margin"></div>
-
-                </div>
-            <!-- </section> -->
-        </div> 
-            <!--===== Projects =====-->
-            <h2 class="section-title" id="work">Projects</h2>
-           <div class="ProjectsGrid">
-            <section class="margin"></section>
-            <section>
-                <a  class="work__img" alt="Loading..">
-                    <!-- <img src="assets/img/work1.jpg" alt=""> -->
-                    <video src="./assets/video/CapsBallv2.mp4" controls muted preload="none" poster="https://placehold.co/1280x720/1e1e24/00d2ff?text=View+Project+&font=Montserrat"></video>
-                    
-                   <span class="info">
-                    <h3>CapsBall Multiplayer Mobile</h3>
-                    <p class="about_project"> CapsBall 🏆, a multiplayer football game crafted in Unity! <br>
-                        • Constructing real-time multiplayer functionality with Unity's Netcode<br>
-                        • Smoothly managing spawn, despawn, and network cleanup processes<br>
-                        • Handling server authority and client-side updates effectively<br>
-                        • Synchronizing UI elements such as scores, timers, and end-game panels across all players<br>
-                        • Resolving complex network and scene reload issues through meticulous debugging<br>
-
-                        </p>
-                   </span> 
-                </a>
-                </section>
-                <section>
-                    <a  class="work__img" alt="Loading..">
-                       <!-- <img src="assets/img/work1.jpg" alt=""> -->
-                       <video src="./assets/video/p1.mp4" video controls muted preload="none" poster="https://placehold.co/1280x720/1e1e24/00d2ff?text=View+Project+&font=Montserrat"></video>
-                    
-                        <span class="info">
-                            <h3>DeathMatch-PC</h3>
-                            <p class="about_project"> Third-Person View Shooting game with Real life graphics and
-                         different Maps to play in. <br>
-                           • Team Deathmatch map Completed (10 kills first to win) <br>
-                           • Story Mode map Completed. <br>
-                           • has AI enemy and teammates <br>
-                           • player can drive a car <br>
-                           •Currently under development.</p>
-                    
-                      </span> 
-                    </a>  
-              </section>
-              
-                <section> <a  class="work__img" alt="Loading..">
-                      <!-- <img src="assets/img/work1.jpg" alt=""> -->
-                     <video src="./assets/video/p2.mp4" controls muted preload="none" poster="https://placehold.co/1280x720/1e1e24/00d2ff?text=View+Project+&font=Montserrat"></video>
-
-                    <span class="info">
-                      <h3>BucePhalus</h3>
-                      <p class="about_project">It is a Third-Person-View Car Driving Game Simulation. <br>
-                    • Different Racing Formats, includingRaceAlone, FreeDrive, etc.<br>
-                    • easy ,medium & hard difficulty tracks.<br>
-                    
-                      </p> 
-                    
-                       </span> 
-                    
-                   </span> 
                         </a>
-                 </section>
-                
-            <section class="margin"></section>
 
+                        <a href="https://wa.me/+916307328745" target="_blank" class="contact-card">
+                            <div class="contact-icon"><i class="bx bxl-whatsapp"></i></div>
+                            <div>
+                                <div class="contact-title">WhatsApp / Mobile</div>
+                                <div class="contact-value">+91 6307328745</div>
+                            </div>
+                        </a>
 
-            <section class="margin"></section>
-            <section> <a  class="work__img" alt="Loading..">
-                <!-- <img src="assets/img/work1.jpg" alt=""> -->
-                <video src="./assets/video/mathAthon-2k24 (2).mp4" controls muted preload="none" poster="https://placehold.co/1280x720/1e1e24/00d2ff?text=View+Project+&font=Montserrat"></video>
-                
-               <span class="info">
-                <h3>Math-A-Thon</h3>
-                <p class="about_project"> Math-A-Thon is a Endless Runner 3D Game. <br>
-                    • Solve simple Math Equations in order to progress through game. <br>
-                    • 30+ Levels to play and 5 unique characters to unlock <br>
-                    • Currently under development.
-                    
-                    </p>
-               </span> 
-            </a></section>
-            <section>
-                <a  class="work__img" alt="Loading..">
-                    <!-- <img src="assets/img/work1.jpg" alt=""> -->
-                    <video src="./assets/video/ScoccerStrikerProject.mp4" controls muted preload="none" poster="https://placehold.co/1280x720/1e1e24/00d2ff?text=View+Project+&font=Montserrat"></video>
-                    
-                   <span class="info">
-                    <h3>SoccerStriker</h3>
-                    <p class="about_project"> Soccer Striker is a sports game where players control a striker <br>
-                             attempting to score against dynamic defenses. <br>
-                        • Implemented all core game mechanics using C#.<br>
-                        • Features include ball physics, shooting system, goal detection, and scoring logic.<br>
-                        • 10k+ Downloads and 4+ star rating on PlayStore.<br>
-                        </p>
-                   </span> 
-                </a>
-                </section>
-            <section>  <a href="https://play.google.com/store/apps/details?id=typing.game.practice.word.zombie.attack" class="work__img" alt="Loading..">
-                <!-- <img src="assets/img/work1.jpg" alt=""> -->
-               <video src="./assets/video/p5.mp4" controls muted preload="none" poster="https://placehold.co/1280x720/1e1e24/00d2ff?text=View+Project+&font=Montserrat"></video>
-               <span class="info">
-                <h3>ZombieDefence</h3>
-                <p class="about_project"> 
-                  Zombie Defence is a 2D Typing Game. <br>
-                  • Build While working for Crimson Insights<br>
-                  • 50 levels to Play, each gets more difficult<br>
-                  • 5k+ Downloads and 4 star rating on PlayStore. <br>
-                  </p>
-               </span> 
-               </a> 
-          </section>
-             
-            <section class="margin"></section>
-            <section class="margin"></section>
+                        <a href="https://www.linkedin.com/in/faaraan72/" target="_blank" class="contact-card">
+                            <div class="contact-icon"><i class="bx bxl-linkedin"></i></div>
+                            <div>
+                                <div class="contact-title">LinkedIn Profile</div>
+                                <div class="contact-value">linkedin.com/in/faaraan72</div>
+                            </div>
+                        </a>
 
-
-            <section><a  class="work__img" alt="Loading..">
-                <!-- <img src="assets/img/work1.jpg" alt=""> -->
-                   <video src="./assets/video/p6.mp4" controls muted preload="none" poster="https://placehold.co/1280x720/1e1e24/00d2ff?text=View+Project+&font=Montserrat"></video>
-                 <span class="info">
-                 <h3>2-Way ClientServer Chat Application Using JAVA</h3>
-                 <p class="about_project"> 
-                    Simple 2 way client-server applicatoin using Java. <br>
-                    •Java's Graphical User Interface- Abstract Windows Toolkit, Java Swing; <br>
-                    •WhatsApp's GUI CLone. <br>
-                       </p>
-                   </span> 
-                 </a>
-           </section>     
-            <section>  <a href="https://faaraan72.itch.io/paratrooper-2019" class="work__img" alt="Loading..">
-                <!-- <img src="assets/img/work1.jpg" alt=""> -->
-               <video src="./assets/video/paraTrooper2019.mp4" controls muted preload="none" poster="https://placehold.co/1280x720/1e1e24/00d2ff?text=View+Project+&font=Montserrat"></video>
-               <span class="info">
-                <h3>ParaTrooper 2019</h3>
-                <p class="about_project"> 
-                    A 2D arcade shooter inspired by the classic Paratrooper. <br>
-                  • Implemented object pooling for bullets, helicopters, and paratroopers to optimize performance.<br>
-                  • Your mission is to protect your base from waves of enemy helicopters, jets, and paratroopers.<br>
-                  • With increasing difficulty, explosive moments, and unexpected airstrikes, every second<br>
-                   &nbsp;&nbsp;&nbsp;&nbsp;counts in this thrilling test of reflexes and strategy.<br>
-                  •  Can you hold the line? Tap to Play <br>
-                  </p>
-               </span> 
-               </a> 
-             </section>
-             <section>  <a href="https://faaraan72.itch.io/find-and-flip" class="work__img" alt="Loading..">
-                <!-- <img src="assets/img/work1.jpg" alt=""> -->
-               <video src="./assets/video/Find&Flip-Gameplay.mp4" controls muted preload="none" poster="https://placehold.co/1280x720/1e1e24/00d2ff?text=View+Project+&font=Montserrat"></video>
-               <span class="info">
-                <h3>find-and-flip</h3>
-                <p class="about_project"> 
-                    A fast-paced 2D memory card-matching game designed to challenge your focus and recall. <br>
-                    • Flip two cards at a time to reveal pictures and match identical pairs to clear the board. <br>
-                    • As the levels progress, the challenge intensifies, testing your memory with more cards and complex layouts. <br>
-                    • Sharpen your brain while enjoying a relaxing yet addictive gameplay experience. <br>
-                    • Can you match every pair and conquer the board? Tap to Play!
-                  </p>
-               </span> 
-               </a> 
-             </section>
-                
-        </div>
-            <!--===== CONTACT =====-->
-            
-                
-            <div class="gridCOntent">
-               <!-- <div></div> -->
-                <section class="contact section" id="contact">
-                
-                    <h2 class="section-title">Contact</h2>
-                  
-                    <div class="contact__container bd-grid">
-                        <form action="https://api.web3forms.com/submit" method="POST" class="contact__form">
-                            <input type="hidden" name="access_key" value="2216fb40-a4df-4981-b218-4286fd756da8">
-                            <input type="text" name="name" placeholder="Name" class="contact__input" required>
-                            <input type="mail" name="email"  placeholder="Email" class="contact__input" required>
-                            <textarea name="message" placeholder="Enter Your Message & Leave Your Contact Number" cols="0" rows="10" class="contact__input"></textarea>
-                            <!-- <input type="button" value="Submit" class="contact__button button"> -->
-                            <button type="submit" class="contact__button button">Submit</button>
-                        </form>
+                        <a href="https://github.com/Faaraan72" target="_blank" class="contact-card">
+                            <div class="contact-icon"><i class="bx bxl-github"></i></div>
+                            <div>
+                                <div class="contact-title">GitHub Repositories</div>
+                                <div class="contact-value">github.com/Faaraan72</div>
+                            </div>
+                        </a>
                     </div>
-                </section>
+
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                        <input type="hidden" name="access_key" value="2216fb40-a4df-4981-b218-4286fd756da8">
+                        <div class="form-group">
+                            <label class="form-label">FULL NAME</label>
+                            <input type="text" name="name" class="form-input" placeholder="e.g. John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">EMAIL ADDRESS</label>
+                            <input type="email" name="email" class="form-input" placeholder="e.g. john@company.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">MESSAGE & CONTACT DETAILS</label>
+                            <textarea name="message" rows="5" class="form-textarea" placeholder="Discuss role openings, netcode engineering, or backend architecture..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">
+                            Send Transmission <i class="bx bx-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
             </div>
-            <!-- <a  href="https://wa.me/+916307328745" class="stickyBtn"><p><i class='bx bxl-whatsapp'></i></p></a> -->
-            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-            <div class="floating-container">
-              <div class="floating-button">+</div>
-              <div class="element-container">
-            
-                <a href="tel:+916307328745" class="float-element tooltip-left"> <span >
-                  <i class="material-icons">phone
-                  </i></a>
-                </span>
-                <a href="mailto:mohdfaaraanaskari@gmail.com" class="float-element"><span >
-                    <i class="material-icons">email
-                 </i>
-                  </span></a>
-                  <a href="https://wa.me/+916307328745" class="float-element"><span >
-                    <i class="material-icons">chat</i>
-                  </span></a>
-                  
-              </div>
+        </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">MOHAMMAD FAARAAN ASKARI</div>
+            <p style="color: var(--text-subtle); font-size: 0.9rem;">Unity & Multiplayer Systems Engineer</p>
+            <div class="footer-socials">
+                <a href="https://github.com/Faaraan72" target="_blank" class="social-icon"><i class="bx bxl-github"></i></a>
+                <a href="https://www.linkedin.com/in/faaraan72/" target="_blank" class="social-icon"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://wa.me/+916307328745" target="_blank" class="social-icon"><i class="bx bxl-whatsapp"></i></a>
+                <a href="mailto:mohdfaaraanaskari@gmail.com" class="social-icon"><i class="bx bx-envelope"></i></a>
             </div>
-        </main>
+            <div class="footer-copy">&copy; 2026 Mohammad Faaraan Askari. All rights reserved.</div>
+        </div>
+    </footer>
 
-        <!-- <iframe frameborder="0" src="https://itch.io/embed/3446981?border_width=5&amp;border_color=c7bcdd" width="560" height="175">
-            <a href="https://faaraan72.itch.io/paratrooper-2019">Paratrooper 2019 by Faaraan72</a>
-        </iframe> -->
-
-        <img id="peekImg" src="assets/video/Detgif-unscreen.gif" alt="">
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">Mohammad Faaraan Askari</p>
-            <div class="footer__social">
-                <a href="https://www.linkedin.com/in/faaraan72/" class="footer__icon"><i class='bx bxl-linkedin' ></i></a>
-                <a href="https://www.instagram.com/faaraan_askari01/" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a  href="https://wa.me/+916307328745" class="footer__icon"><p><i class='bx bxl-whatsapp'></i></p></a>
-                <a href="https://github.com/Faaraan72" class="footer__icon"><i class='bx bxl-github' ></i></a>
-                <!-- <p><i class='bx bxs-phone-call'></i> 6307328745 </p> -->
-            </div>
-            <p class="footer__copy">&#169; All rigths reserved</p>
-        </footer>
-
- <!-- AUTO TYPE JS -->
- <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-
- <script>
-  var typed = new Typed("#auto_type",{
-      strings: ["Game Developer","AR || VR || 3D || 2D","Gameplay & Systems Engineer"],
-      typeSpeed:100,
-      backSpeed:100,
-      loop:true,
-  });
- </script>
-
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
-
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-
-        <script>
-          document.addEventListener("DOMContentLoaded", function() {
-    let btn = document.getElementById("btn");
-    let btnImage = document.getElementById("btn");
-
-    btn.onclick = function() {
-        document.body.classList.toggle("dark-mode"); // Toggle dark mode on the body
-
-        // Check if dark mode is active and change the button image accordingly
-        if (document.body.classList.contains("dark-mode")) {
-            btnImage.src = "assets/img/n.png"; // Change to dark mode image
-        } else {
-            btnImage.src = "assets/img/d.png"; // Change to light mode image
-        }
-    };
-});
-        
-            let btn = document.getElementById("btn");
-
-          btn.onclick = function() {
-            
-            document.body.classList.toggle("dark-mode");
-            };
-        </script>
-    <!-- <script src="/assets/js.js"></script> -->
-    </body>
+    <!-- ===== MAIN JS ===== -->
+    <script src="assets/js/main.js"></script>
+</body>
 </html>

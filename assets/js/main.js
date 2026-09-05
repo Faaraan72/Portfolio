@@ -1,57 +1,107 @@
-/*===== MENU SHOW =====*/ 
-const showMenu = (toggleId, navId) =>{
-    const toggle = document.getElementById(toggleId),
-    nav = document.getElementById(navId)
+/* ==========================================================================
+   FAARAAN ASKARI - PORTFOLIO INTERACTION CONTROLLER
+   ========================================================================== */
 
-    if(toggle && nav){
-        toggle.addEventListener('click', ()=>{
-            nav.classList.toggle('show')
-        })
-    }
-}
-showMenu('nav-toggle','nav-menu')
+document.addEventListener('DOMContentLoaded', () => {
+  // Navigation Menu Toggle (Mobile)
+  const navToggle = document.getElementById('nav-toggle');
+  const navMenu = document.getElementById('nav-menu');
+  const navLinks = document.querySelectorAll('.nav__link');
 
-/*==================== REMOVE MENU MOBILE ====================*/
-const navLink = document.querySelectorAll('.nav__link')
+  if (navToggle && navMenu) {
+    navToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('show-menu');
+      const icon = navToggle.querySelector('i');
+      if (icon) {
+        if (navMenu.classList.contains('show-menu')) {
+          icon.className = 'bx bx-x';
+        } else {
+          icon.className = 'bx bx-menu';
+        }
+      }
+    });
+  }
 
-function linkAction(){
-    const navMenu = document.getElementById('nav-menu')
-    // When we click on each nav__link, we remove the show-menu class
-    navMenu.classList.remove('show')
-}
-navLink.forEach(n => n.addEventListener('click', linkAction))
+  // Close Mobile Menu when clicking a nav link
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      if (navMenu) navMenu.classList.remove('show-menu');
+      const icon = navToggle ? navToggle.querySelector('i') : null;
+      if (icon) icon.className = 'bx bx-menu';
+    });
+  });
 
-/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
-const sections = document.querySelectorAll('section[id]')
+  // Active Link Highlighting on Scroll
+  const sections = document.querySelectorAll('section[id]');
+  const handleScrollActive = () => {
+    const scrollY = window.pageYOffset;
 
-const scrollActive = () =>{
-    const scrollDown = window.scrollY
+    sections.forEach(current => {
+      const sectionHeight = current.offsetHeight;
+      const sectionTop = current.offsetTop - 100;
+      const sectionId = current.getAttribute('id');
+      const navLink = document.querySelector(`.nav__menu a[href*="${sectionId}"]`);
 
-  sections.forEach(current =>{
-        const sectionHeight = current.offsetHeight,
-              sectionTop = current.offsetTop - 58,
-              sectionId = current.getAttribute('id'),
-              sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']')
-        
-        // if(scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight){
-        //     sectionsClass.classList.add('active-link')
-        // }else{
-        //     sectionsClass.classList.remove('active-link')
-        // }                                                    
-    })
-}
-window.addEventListener('scroll', scrollActive)
+      if (navLink) {
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+          navLink.classList.add('active');
+        } else {
+          navLink.classList.remove('active');
+        }
+      }
+    });
+  };
 
-/*===== SCROLL REVEAL ANIMATION =====*/
-const sr = ScrollReveal({
-    origin: 'top',
-    distance: '60px',
-    duration: 2000,
-    delay: 200,
-//     reset: true
+  window.addEventListener('scroll', handleScrollActive);
+
+  // Project Category Filter Handler
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const projectCards = document.querySelectorAll('.project-card');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      // Remove active class from all buttons
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const filter = btn.getAttribute('data-filter');
+
+      projectCards.forEach(card => {
+        const category = card.getAttribute('data-category') || '';
+        const categories = category.split(' ');
+        if (filter === 'all' || categories.includes(filter)) {
+          card.style.display = 'flex';
+          setTimeout(() => {
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
+          }, 50);
+        } else {
+          card.style.opacity = '0';
+          card.style.transform = 'translateY(20px)';
+          setTimeout(() => {
+            card.style.display = 'none';
+          }, 200);
+        }
+      });
+    });
+  });
+
+  // Auto-play videos on hover / touch & reset to poster on mouseleave
+  const mediaContainers = document.querySelectorAll('.project-card__media');
+  mediaContainers.forEach(container => {
+    const video = container.querySelector('video');
+    if (!video) return;
+
+    container.addEventListener('mouseenter', () => {
+      video.play().catch(() => {});
+    });
+
+    container.addEventListener('mouseleave', () => {
+      video.pause();
+      try {
+        video.currentTime = 0;
+      } catch (e) {}
+      video.load(); // Forces browser to restore the poster/preview image
+    });
+  });
 });
-
-sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{}); 
-sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
-sr.reveal('.home__social-icon',{ interval: 200}); 
-sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
