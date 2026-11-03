@@ -1,0 +1,13 @@
+# Python Virtual Environment
+.venv/
+__pycache__/
+*.pyc
+
+# IDE & Editor files
+.vs/
+.vscode/
+
+# High-resolution original backups (kept safe locally)
+assets/video_backup_originals/
+assets/img_backup_originals/
+

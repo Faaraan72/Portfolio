@@ -86,22 +86,46 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Auto-play videos on hover / touch & reset to poster on mouseleave
+  // Video Hover Preview & Interactive Native Controls
   const mediaContainers = document.querySelectorAll('.project-card__media');
+
   mediaContainers.forEach(container => {
     const video = container.querySelector('video');
     if (!video) return;
 
-    container.addEventListener('mouseenter', () => {
-      video.play().catch(() => {});
+    let userInteracted = false;
+
+    // Detect user interactions on the video controls
+    video.addEventListener('play', () => {
+      if (!video.muted) {
+        userInteracted = true;
+      }
     });
 
+    video.addEventListener('volumechange', () => {
+      if (!video.muted) {
+        userInteracted = true;
+      }
+    });
+
+    video.addEventListener('seeking', () => {
+      userInteracted = true;
+    });
+
+    // Auto-play silently on hover if user hasn't manually interacted
+    container.addEventListener('mouseenter', () => {
+      if (!userInteracted && video.paused) {
+        video.muted = true;
+        video.play().catch(() => {});
+      }
+    });
+
+    // Pause on mouseleave only if it was a silent hover
     container.addEventListener('mouseleave', () => {
+      if (document.fullscreenElement) return;
+      if (userInteracted || !video.muted) return;
+
       video.pause();
-      try {
-        video.currentTime = 0;
-      } catch (e) {}
-      video.load(); // Forces browser to restore the poster/preview image
     });
   });
 });

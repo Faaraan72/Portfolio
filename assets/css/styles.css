@@ -569,12 +569,14 @@ img, video {
   aspect-ratio: 16 / 9;
   background: #000;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .project-card__video {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 .project-card__video--portrait {
@@ -595,6 +597,7 @@ img, video {
   border-radius: var(--radius-sm);
   z-index: 2;
   box-shadow: 0 4px 12px rgba(255, 158, 0, 0.4);
+  pointer-events: none;
 }
 
 .project-card__content {
